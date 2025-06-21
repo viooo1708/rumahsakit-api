@@ -8,8 +8,9 @@ class RumahSakit extends Model
 {
 
     protected $table = 'rumah_sakits';
-    protected $primaryKey = 'no';
+    protected $primaryKey = 'id';
     public $incrementing = true;
+    public $timestamps = false;
     protected $fillable = [
         'nama', 'alamat', 'telepon', 'tipe', 'latitude', 'longitude'
     ];

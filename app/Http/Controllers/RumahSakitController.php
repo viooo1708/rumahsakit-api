@@ -9,7 +9,7 @@ class RumahSakitController extends Controller
 {
     public function index()
     {
-        return response()->json(RumahSakit::all());
+        return response()->json(['data' => RumahSakit::all()]);
     }
 
     public function show($id)
